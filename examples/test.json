@@ -1,0 +1,18 @@
+{
+  "builders":
+  [
+    {
+      "type": "virtualbox-iso",
+      "iso_url": "http://mirror.neolabs.kz/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1810.iso",
+      "iso_checksum": "38d5d51d9d100fd73df031ffd6bd8b1297ce24660dc8c13a3b8b4534a4bd291c",
+      "iso_checksum_type": "sha256",
+      "shutdown_command": "echo 'packer' | sudo -S shutdown -P now",
+      "disk_size": 5000,
+      "ssh_username": "root",
+      "ssh_password": "pass",
+      "ssh_timeout": "20m",
+      "vm_name": "tdhtest",
+      "boot_wait": "3s"
+    }
+  ]
+}
